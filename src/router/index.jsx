@@ -15,7 +15,7 @@ export const Router = () => {
           }
         />
            {/* Rota Fallback para rotas inválidas */}
-           <Route
+        <Route
           path="*"
           element={
             <div>
@@ -23,8 +23,7 @@ export const Router = () => {
             </div>
           }
         />
-        </Route>
-      </Routes>
-
+      </Route>
+    </Routes>
   );
 };
