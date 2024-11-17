@@ -5,14 +5,18 @@ import { Footer } from './footer';
 
 export const Layout = () => {
   return (
-    <div className="h-screen">
+  <div>
+    <header>
       <TopBar />
-      <div className="h-full">
-        <Outlet />
-      </div>
-      <Footer /> 
-    </div>
+    </header>
+    <main>
+      <Outlet />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </div>
+  
   );
 };
-
 
