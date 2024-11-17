@@ -14,7 +14,17 @@ export const Router = () => {
             </div>
           }
         />
-      </Route>
-    </Routes>
+           {/* Rota Fallback para rotas inválidas */}
+           <Route
+          path="*"
+          element={
+            <div>
+              <h1>Página Não Encontrada</h1>
+            </div>
+          }
+        />
+        </Route>
+      </Routes>
+
   );
 };
