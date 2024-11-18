@@ -1,7 +1,6 @@
-/* eslint-disable linebreak-style */
-import {Infos} from './infos';
-import {SocialLinks} from './socialLinks';
-import Logo from '../../../assets/logo-footer.png';
+import { Infos } from './infos';
+import { SocialLinks } from './socialLinks';
+import Logo from '../../../assets/logo-dark.svg';
 
 export const Footer = () => {
   return (
@@ -11,6 +10,7 @@ export const Footer = () => {
           <img
             src={Logo}
             alt="Logo do CineTrack, plataforma de filmes e séries"
+            className="w-40"
           />
           <div className="items-center gap-10">
             <div className="items-stretch">
@@ -48,4 +48,3 @@ export const Footer = () => {
     </footer>
   );
 };
-

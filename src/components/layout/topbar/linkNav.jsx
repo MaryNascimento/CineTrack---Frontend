@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 //Navegaçao topbar: Filme, Serie
 export const LinkNav = ({ href, children }) => {
   return (
-    <li className="text-3xl font-bold">
+    <li className="text-base font-semibold">
       <a href={href} target="_blank" rel="noopener noreferrer">
         {children}
       </a>

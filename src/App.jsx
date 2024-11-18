@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
