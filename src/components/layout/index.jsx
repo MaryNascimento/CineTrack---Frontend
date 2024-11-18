@@ -1,15 +1,22 @@
+/* eslint-disable linebreak-style */
 import { Outlet } from 'react-router-dom';
 import { TopBar } from './topbar';
 import { Footer } from './footer';
 
 export const Layout = () => {
   return (
-    <div className="h-screen flex flex-col">
+  <div>
+    <header>
       <TopBar />
-      <div className="h-full">
-        <Outlet />
-      </div>
+    </header>
+    <main>
+      <Outlet />
+    </main>
+    <footer>
       <Footer />
-    </div>
+    </footer>
+  </div>
+  
   );
 };
+

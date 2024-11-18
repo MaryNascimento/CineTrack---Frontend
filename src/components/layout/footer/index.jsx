@@ -1,38 +1,51 @@
+/* eslint-disable linebreak-style */
+import {Infos} from './infos';
+import {SocialLinks} from './socialLinks';
+import Logo from '../../../assets/logo-footer.png';
+
 export const Footer = () => {
   return (
-    <footer className="bg-blue-300 w-full">
-      <div className="container mx-auto">
-        <div>
-          <h1 className="text-white text-2xl font-bold">React Router v6</h1>
-        </div>
-        <div className="flex justify-center items-center py-4">
-          <p className="text-white">© 2021 React Router v6</p>
-        </div>
-        <div className="flex justify-center items-center py-4">
-          <ul className="flex space-x-4">
-            <li>
-              <a href="#home" className="text-white hover:underline">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="text-white hover:underline">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="text-white hover:underline">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="text-white hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
+    <footer className="bottom-0 w-full">
+      <div className="bg-azulsecundario">
+        <div className="flex p-4 justify-around leading-8">
+          <img
+            src={Logo}
+            alt="Logo do CineTrack, plataforma de filmes e séries"
+          />
+          <div className="items-center gap-10">
+            <div className="items-stretch">
+              <h3 className="font-medium">
+                🎬 Explore o mundo das histórias com a gente!
+              </h3>
+              <p>
+                Junte-se a uma comunidade apaixonada por filmes e séries, onde
+                cada ação é marcada e cada maratona vira roteiro.
+              </p>
+              <p>
+                <span className="font-medium">CineTrack:</span> sua plataforma
+                para compartilhar e reviver experiências memoráveis.
+              </p>
+            </div>
+
+            <nav>
+              <Infos />
+            </nav>
+          </div>
+
+          <div className="content-center">
+            <nav>
+              <SocialLinks />
+              <ul>
+                <li className="font-medium mt-3">Precisa de ajuda?</li>
+                <li className="underline">
+                  <a href="/faleconosco">Fale conosco</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>
   );
 };
+
