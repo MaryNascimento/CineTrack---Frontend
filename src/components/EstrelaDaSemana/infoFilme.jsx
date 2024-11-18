@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Filme from "../../assets/exemplo-filme.png"; // Importe a imagem do filme
 import IdadeMinima from "../../assets/idade-minima.png"; // Importe a imagem de idade mínima
+
 export const InfosFilme = () => {
   const [filme, setFilme] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -26,7 +27,7 @@ export const InfosFilme = () => {
       } finally {
         setLoading(false);
       }
-    }, 1000); // Simula um atraso de 1 segundo na requisição
+    }, 1); // Simula um atraso de 1 segundo na requisição
   }, []);
 
   if (loading) return <div>Carregando...</div>;

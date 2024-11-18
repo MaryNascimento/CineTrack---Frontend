@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -16,7 +17,7 @@ export default {
         '3xl': '1.75rem',
       },
       backgroundImage: {
-        'bg-banner': "url('')",
+        'bg-banner': "url('./src/assets/exemplo-imagem-fundo.png')",
       },
     },
   },
